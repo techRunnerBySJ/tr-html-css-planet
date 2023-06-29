@@ -1,0 +1,60 @@
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    background-color: #604B92;
+  }
+  
+  .wrapper {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .circle, #planet {
+    position: relative;
+  }
+  #planet {
+    z-index: 2;
+  }
+  .circle {
+    z-index: 1;
+  }
+  
+  .circle, #planet {
+    transform: rotate3d(0, 0, 0, 0deg);
+    transform-origin: 50% 50%;
+    animation: rotate 9s linear infinite;
+  }
+  #circle5 {
+    animation-duration: 13s;
+  }
+  #circle4 {
+    animation-duration: 11s;
+  }
+  #circle3 {
+    animation-duration: 9s;
+  }
+  #circle2 {
+    animation-duration: 7s;
+  }
+  
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate3d(0, 0, 0, 0deg);
+    }
+    100% {
+      transform: rotate3d(0, 0, 1, 360deg);
+    }
+  }
+  
+  
